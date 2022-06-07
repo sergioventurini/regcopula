@@ -1,0 +1,46 @@
+Package: regcopula
+Type: Package
+Title: Model Based Clustering of Binary Dissimilarity Measurements.9000
+Version: 1.0.0
+Date: 2022-07-26
+Authors@R: c(
+  person("Sergio", "Venturini", role=c("aut", "cre"), email = "sergio.venturini@unicatt.it"),
+  person("Nadja", "Klein", role=c("ctb"), email = "nadja.klein@hu-berlin.de"),
+  person("Michael Stanley", "Smith", role=c("ctb"), email = "mike.smith@mbs.edu"))
+Description: Functions to perform Bayesian inference for regression copulas (<https://doi.org/10.1080/07350015.2020.1721295>).
+Author: Sergio Venturini [aut, cre],
+    Nadja Klein [ctb],
+    Michael Stanley Smith [ctb]
+Maintainer: Sergio Venturini <sergio.venturini@unicatt.it>
+License: GPL (>= 2)
+NeedsCompilation: yes
+Repository: CRAN
+LazyData: TRUE
+Imports:
+    abind,
+    bayesplot (>= 1.7.0),
+    coda (>= 0.19-3),
+    ggplot2 (>= 3.2.1),
+    ggrepel (>= 0.8.1),
+    graphics,
+    MCMCpack (>= 1.4-4),
+    modeltools (>= 0.2-22),
+    parallel (>= 3.6.1),
+    robustbase (>= 0.93-5),
+    robustX (>= 1.2-5),
+    stats4 (>= 3.6.0),
+    tools
+Suggests:
+    knitr,
+    mcmcplots,
+    rlecuyer,
+    testthat
+Depends:
+    methods,
+    R (>= 3.6.0),
+    stats,
+    utils
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress
+BugReports: https://github.com/sergioventurini/regcopula/issues
+Encoding: UTF-8
+RoxygenNote: 7.1.2.9000
